@@ -7,154 +7,230 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-        body {
-            background: linear-gradient(#0d6efd, #6610f2);
-            color: white;
-            font-family: 'Arial', sans-serif;
-        }
+<style>
+    body {
+        background: linear-gradient(180deg, #fdfefe, #eef3f0);
+        font-family: 'Segoe UI', system-ui, sans-serif;
+        color: #2f2f2f;
+    }
 
-        h1 {
-            text-align: center;
-            font-size: 4rem;
-            margin: 30px 0;
-            text-shadow: 2px 2px 5px red;
-        }
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+        margin: 30px 0 10px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: #b11226;
+    }
 
-        .card {
-            background-color: rgba(255, 255, 255, 0.9);
-            color: black;
-            border-radius: 15px;
-            margin-bottom: 30px;
-        }
+    .navidad {
+        text-align: center;
+        font-size: 1.4rem;
+        margin-top: 20px;
+        color: #2e7d32;
+    }
 
-        .card-title {
-            font-weight: bold;
-            text-align: center;
-        }
+    /* 👇 Layout equilibrado */
+    #videos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-top: 30px;
+    }
 
-        .nota-input {
-            width: 100%;
+    @media (min-width: 992px) {
+        #videos {
+            grid-template-columns: repeat(2, 1fr);
         }
+    }
 
-        .resultado {
-            background-color: white;
-            color: black;
-            padding: 15px;
-            border-radius: 10px;
-            white-space: pre-wrap;
-        }
+    .card {
+        background: #ffffff;
+        border-radius: 20px;
+        border: 1px solid #e0e0e0;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        padding: 20px;
+        transition: transform 0.2s ease;
+    }
 
-        .navidad {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-    </style>
+    .card:hover {
+        transform: translateY(-4px);
+    }
+
+    .card-title {
+        font-weight: 600;
+        text-align: center;
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+        color: #b11226;
+    }
+
+    .nota-input {
+        border-radius: 12px;
+        text-align: center;
+        font-weight: 500;
+        border: 1px solid #cfd8dc;
+    }
+
+    .btn-danger {
+        background: linear-gradient(135deg, #b11226, #e53935);
+        border: none;
+        padding: 12px 35px;
+        border-radius: 30px;
+        font-weight: 600;
+        box-shadow: 0 6px 15px rgba(177,18,38,0.3);
+    }
+
+    .btn-danger:hover {
+        opacity: 0.9;
+    }
+
+    .resultado {
+        background: #ffffff;
+        color: #333;
+        padding: 20px;
+        border-radius: 18px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        margin-bottom: 40px;
+        white-space: pre-wrap;
+        border-left: 6px solid #2e7d32;
+    }
+</style>
+
 </head>
 <body>
 
 <div class="container">
 
-    <div class="navidad">🎄🎅✨ ¡Feliz EUROMARICON! ✨🎅🎄</div>
-
+    <div class="navidad">✨🎄 Edición especial EUROMARICON 🎄✨</div>
     <h1>EUROMARICON</h1>
 
     <div id="videos">
-
-        <!-- VIDEO 1 -->
+        <!-- Repite hasta la canción 10 -->
+        <!-- ... -->
+                 <!-- VIDEO TEMPLATE -->
+        <!-- Duplica este bloque -->
         <div class="card p-3">
             <p class="card-title">Canción 1</p>
-            <div class="ratio ratio-16x9">
+            <div class="ratio ratio-16x9 rounded overflow-hidden">
                 <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
             </div>
-            <input type="number" class="form-control nota-input mt-2" min="1" max="10" required placeholder="Nota (1-10)">
+            <input type="number" class="form-control nota-input mt-3" min="1" max="10" placeholder="Nota (1-10)">
         </div>
 
-        <!-- VIDEO 2 -->
+        <!-- Repite hasta la canción 10 -->
+        <!-- ... -->
+                 <!-- VIDEO TEMPLATE -->
+        <!-- Duplica este bloque -->
         <div class="card p-3">
-            <p class="card-title">Canción 2</p>
-            <div class="ratio ratio-16x9">
+            <p class="card-title">Canción 1</p>
+            <div class="ratio ratio-16x9 rounded overflow-hidden">
                 <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
             </div>
-            <input type="number" class="form-control nota-input mt-2" min="1" max="10" required placeholder="Nota (1-10)">
+            <input type="number" class="form-control nota-input mt-3" min="1" max="10" placeholder="Nota (1-10)">
         </div>
 
-        <!-- VIDEO 3 -->
+        <!-- Repite hasta la canción 10 -->
+        <!-- ... -->
+                 <!-- VIDEO TEMPLATE -->
+        <!-- Duplica este bloque -->
         <div class="card p-3">
-            <p class="card-title">Canción 3</p>
-            <div class="ratio ratio-16x9">
+            <p class="card-title">Canción 1</p>
+            <div class="ratio ratio-16x9 rounded overflow-hidden">
                 <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
             </div>
-            <input type="number" class="form-control nota-input mt-2" min="1" max="10" required placeholder="Nota (1-10)">
+            <input type="number" class="form-control nota-input mt-3" min="1" max="10" placeholder="Nota (1-10)">
         </div>
 
-        <!-- VIDEO 4 -->
+        <!-- Repite hasta la canción 10 -->
+        <!-- ... -->
+                 <!-- VIDEO TEMPLATE -->
+        <!-- Duplica este bloque -->
         <div class="card p-3">
-            <p class="card-title">Canción 4</p>
-            <div class="ratio ratio-16x9">
+            <p class="card-title">Canción 1</p>
+            <div class="ratio ratio-16x9 rounded overflow-hidden">
                 <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
             </div>
-            <input type="number" class="form-control nota-input mt-2" min="1" max="10" required placeholder="Nota (1-10)">
+            <input type="number" class="form-control nota-input mt-3" min="1" max="10" placeholder="Nota (1-10)">
         </div>
 
-        <!-- VIDEO 5 -->
+        <!-- Repite hasta la canción 10 -->
+        <!-- ... -->
+                 <!-- VIDEO TEMPLATE -->
+        <!-- Duplica este bloque -->
         <div class="card p-3">
-            <p class="card-title">Canción 5</p>
-            <div class="ratio ratio-16x9">
+            <p class="card-title">Canción 1</p>
+            <div class="ratio ratio-16x9 rounded overflow-hidden">
                 <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
             </div>
-            <input type="number" class="form-control nota-input mt-2" min="1" max="10" required placeholder="Nota (1-10)">
+            <input type="number" class="form-control nota-input mt-3" min="1" max="10" placeholder="Nota (1-10)">
         </div>
 
-        <!-- VIDEO 6 -->
+        <!-- Repite hasta la canción 10 -->
+        <!-- ... -->
+                 <!-- VIDEO TEMPLATE -->
+        <!-- Duplica este bloque -->
         <div class="card p-3">
-            <p class="card-title">Canción 6</p>
-            <div class="ratio ratio-16x9">
+            <p class="card-title">Canción 1</p>
+            <div class="ratio ratio-16x9 rounded overflow-hidden">
                 <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
             </div>
-            <input type="number" class="form-control nota-input mt-2" min="1" max="10" required placeholder="Nota (1-10)">
+            <input type="number" class="form-control nota-input mt-3" min="1" max="10" placeholder="Nota (1-10)">
         </div>
 
-        <!-- VIDEO 7 -->
+        <!-- Repite hasta la canción 10 -->
+        <!-- ... -->
+                 <!-- VIDEO TEMPLATE -->
+        <!-- Duplica este bloque -->
         <div class="card p-3">
-            <p class="card-title">Canción 7</p>
-            <div class="ratio ratio-16x9">
+            <p class="card-title">Canción 1</p>
+            <div class="ratio ratio-16x9 rounded overflow-hidden">
                 <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
             </div>
-            <input type="number" class="form-control nota-input mt-2" min="1" max="10" required placeholder="Nota (1-10)">
+            <input type="number" class="form-control nota-input mt-3" min="1" max="10" placeholder="Nota (1-10)">
         </div>
 
-        <!-- VIDEO 8 -->
+        <!-- Repite hasta la canción 10 -->
+        <!-- ... -->
+                 <!-- VIDEO TEMPLATE -->
+        <!-- Duplica este bloque -->
         <div class="card p-3">
-            <p class="card-title">Canción 8</p>
-            <div class="ratio ratio-16x9">
+            <p class="card-title">Canción 1</p>
+            <div class="ratio ratio-16x9 rounded overflow-hidden">
                 <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
             </div>
-            <input type="number" class="form-control nota-input mt-2" min="1" max="10" required placeholder="Nota (1-10)">
+            <input type="number" class="form-control nota-input mt-3" min="1" max="10" placeholder="Nota (1-10)">
         </div>
 
-        <!-- VIDEO 9 -->
+        <!-- Repite hasta la canción 10 -->
+        <!-- ... -->
+                 <!-- VIDEO TEMPLATE -->
+        <!-- Duplica este bloque -->
         <div class="card p-3">
-            <p class="card-title">Canción 9</p>
-            <div class="ratio ratio-16x9">
+            <p class="card-title">Canción 1</p>
+            <div class="ratio ratio-16x9 rounded overflow-hidden">
                 <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
             </div>
-            <input type="number" class="form-control nota-input mt-2" min="1" max="10" required placeholder="Nota (1-10)">
+            <input type="number" class="form-control nota-input mt-3" min="1" max="10" placeholder="Nota (1-10)">
         </div>
 
-        <!-- VIDEO 10 -->
+        <!-- Repite hasta la canción 10 -->
+        <!-- ... -->
+                 <!-- VIDEO TEMPLATE -->
+        <!-- Duplica este bloque -->
         <div class="card p-3">
-            <p class="card-title">Canción 10</p>
-            <div class="ratio ratio-16x9">
+            <p class="card-title">Canción 1</p>
+            <div class="ratio ratio-16x9 rounded overflow-hidden">
                 <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
             </div>
-            <input type="number" class="form-control nota-input mt-2" min="1" max="10" required placeholder="Nota (1-10)">
+            <input type="number" class="form-control nota-input mt-3" min="1" max="10" placeholder="Nota (1-10)">
         </div>
 
+        <!-- Repite hasta la canción 10 -->
+        <!-- ... -->
     </div>
 
-    <div class="text-center mb-4">
+    <div class="text-center my-5">
         <button class="btn btn-danger btn-lg" onclick="generarTabla()">Tabla de puntuaciones</button>
     </div>
 
